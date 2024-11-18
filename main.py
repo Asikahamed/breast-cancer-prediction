@@ -1,8 +1,8 @@
 import numpy as np
 import pickle
 import streamlit as st
-
-loaded_model = pickle.load(open('/trained_model.sav', 'rb'))
+import os
+loaded_model = pickle.load(open(os.path.join(os.path.dirname(__file__), 'trained_model.sav'), 'rb'))
 
 def breast_cancer_prediction(input_data):
     # Convert input data to float and handle missing values
