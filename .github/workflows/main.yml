@@ -23,6 +23,6 @@ jobs:
 
       - name: Run Streamlit app
         run: |
-          nohup streamlit run main.py
+          nohup streamlit run main.py &
           sleep 150
           pkill -f streamlit
