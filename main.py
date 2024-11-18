@@ -2,7 +2,7 @@ import numpy as np
 import pickle
 import streamlit as st
 
-loaded_model = pickle.load(open('/Users/interlink/Desktop/Deploy/trained_model.sav', 'rb'))
+loaded_model = pickle.load(open('/trained_model.sav', 'rb'))
 
 def breast_cancer_prediction(input_data):
     # Convert input data to float and handle missing values
